@@ -5,7 +5,6 @@ const mongodb = require('mongodb');
 const path = require("path");
 const bodyParser = require('body-parser')
 const fsextra = require('fs-extra');
-const pg = require('pg');
 const moment = require('moment');
 const fs = require("fs");
 
@@ -394,6 +393,13 @@ app.post('/browse/clear', async(req, res) =>{
 
 
 
+app.get('/api', async(req, res) =>{
+
+		return res.json({
+			message: "hello world"
+		})
+
+	});
 
 
 app.listen(3000, () =>{
