@@ -5,7 +5,7 @@ const sales = new mongoose.Schema({
 	name: {type: String, required: true},
 	cost: {type: String, required: true},
 	quantity: {type: String},
-	data: {type: String},
+	date: {type: String},
 	orderid: {type: String},
 	globalid: {type: String, required: true}
 });
