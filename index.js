@@ -873,6 +873,8 @@ app.post('/browse/clear', async(req, res) =>{
 		await Yeardata.deleteMany({});
 		await Yearexpdata.deleteMany({});
 
+			console.log({product,staff,sales,logs,expense,reports,requests,saledata,expensedata,yeardata,yearexpdata,category});
+
 		return res.status(200).json({
 			status: 200
 		})
